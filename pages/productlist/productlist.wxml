@@ -1,0 +1,24 @@
+<view class='prolist'>
+ <block wx:for='{{productList}}' wx:key="index">
+    <view class='prolist_item' bindtap='gotoProductDetail' data-index='{{index}}'>
+      <view class='prolist_cover'>
+        <image src='{{item.cover}}'></image>
+      </view>
+      <view class='prolist_info'>
+        <view class='prolist_title'>
+          <text>{{item.title}}</text>
+        </view>
+        <view class='prolist_price'>
+          <text>¥ {{item.price}}</text>
+        </view>
+        <view class='prolist_other'>
+          <text class='prolist_conmment'>{{item.comment}}条评价</text>
+          <text class='prolist_rate'>好评率{{item.rate}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view class='endview' wx:if='{{noData}}'>
+    <text>没有更多数据</text>
+  </view>
+</view>

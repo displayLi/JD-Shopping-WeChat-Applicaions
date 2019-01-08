@@ -1,0 +1,98 @@
+
+.detail{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mod_slider{
+  width: 100%; 
+  background: #fff;
+  height: auto; 
+  box-sizing: border-box;
+  border-top: 2rpx solid #e8e8ed;
+  border-bottom: 2rpx solid #e8e8ed; 
+}
+.swiper-item{
+  display: block;
+  width: 100%;
+  height: 820rpx;
+}
+.buy_area{
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 120rpx;
+}
+.textWrap{
+  background: #fff;
+  padding: 20rpx;
+}
+.textWrap text {
+  color: #333;
+  overflow: hidden;
+  font-size: 32rpx;
+  font-weight: 600;
+  /* word-break: break-word; */
+}
+.priceWrap{
+  background: #fff;
+  padding: 20rpx
+}
+.priceWrap text{
+  font-size: 36rpx;
+  color: #e4393c;
+  font-weight: 700;
+}
+.btn_bar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: hsla(0,0%,100%,.95);
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 2rpx solid #e8e8ed;
+}
+.icon_cart{
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 22rpx;
+  color: #666;
+}
+.icon_cart image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.cart_btn{
+  width: 50%;
+}
+.cart_btn button {
+  border: none;
+  outline: none;
+  background-color: #e4393c;
+  color: #fff;
+  font-size: 28rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 0;
+}
+.badge{
+  position: absolute;
+  top: 0;
+  right: 140rpx;
+  border-radius: 20rpx;
+  color: #f56c6c;
+  display: inline-block;
+  font-size: 22rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  padding: 0 10rpx;
+  text-align: center;
+  white-space: nowrap;
+  border: 2rpx solid  #f56c6c;
+}

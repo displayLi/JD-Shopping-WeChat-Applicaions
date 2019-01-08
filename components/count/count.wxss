@@ -1,0 +1,29 @@
+
+.num_wrap{
+  width: 220rpx;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+}
+.num_wrap .btn{
+  width: 70rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #f7f7f7;
+  text-align: center;
+  border-radius: 0;
+  color: #333;
+}
+.btn::after{
+  border: none;
+}
+.num_wrap input{
+  width: 90rpx;
+  background: #f7f7f7;
+  height: 60rpx;
+  color: #333;
+  font-size: 24rpx;
+  text-align: center;
+  border: none;
+  margin: 0 2rpx;
+}

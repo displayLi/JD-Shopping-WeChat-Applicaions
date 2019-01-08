@@ -1,0 +1,28 @@
+
+.payWrap{
+  background: #fff;
+  padding: 30rpx 20rpx;
+  border-top: 2rpx solid #e8e8ed;
+  border-bottom: 2rpx solid #e8e8ed; 
+  font-size: 28rpx;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+.title{
+  display: inline-block;
+  width: 10%;
+  color: #999;
+}
+.desc{
+  display: inline-block;
+  width: 80%;
+}
+.icon{
+  display: inline-block;
+  width: 10%;
+  font-weight: 700;
+  text-align: right;
+}

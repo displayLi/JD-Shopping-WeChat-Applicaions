@@ -1,0 +1,87 @@
+
+.popupDom{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: rgba(0,0,0,.7);
+}
+.pop_main{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 600rpx;
+  max-height: 800rpx;
+  background-color: #fff;
+}
+.buy_body{
+  margin-bottom: 100rpx;
+  max-height: 720rpx;
+  overflow: auto;
+  padding: 40rpx 20rpx;
+  color: #333;
+  font-size: 24rpx;
+}
+.pop_btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+}
+.pop_btn button {
+  font-size: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 0;
+  background: #e4393c;
+  color: #fff;
+  width: 100%;
+}
+.buy_header{
+  height: 150rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  font-size: 36rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+.buy_header .head_img{
+  width: 30%;
+  position: relative;
+}
+.buy_header .head_img image{
+  position: absolute;
+  left: 20rpx;
+  top: -50rpx;
+  border-radius: 5rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+.buy_header .info{
+  width: 60%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.info .price {
+  font-size: 36rpx;
+  color: #e4393c;
+  font-weight: 700;
+}
+.info .selcount{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+.buy_body{
+  overflow: hidden;
+}
+.buy_body .amount{
+  float: right;
+}

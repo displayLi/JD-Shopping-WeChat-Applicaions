@@ -1,0 +1,5 @@
+<view class='payWrap'>
+  <text class='title'>{{name}}</text>
+  <text class='desc'>{{desc}}</text>
+  <text class='icon' bindtap='showPopupLayer'>...</text>
+</view>

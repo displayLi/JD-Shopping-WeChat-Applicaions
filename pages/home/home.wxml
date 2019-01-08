@@ -1,0 +1,62 @@
+<view class="container">
+    <!-- 头部 -->
+    <view class="swiper-container">
+        <view class="search-container {{scrollFlag ? 'active' : ''}}">
+            <view class="search-icon">
+                <image class="search-img" src="/image/ai3.png" />
+            </view>
+            <view class="search-input">
+                <i>
+                    <image src="/image/ati.png" />
+                </i>
+                <input type="text" placeholder-class="place-holder" placeholder="请输入您要搜索的商品" />
+            </view>
+            <view class="search-icon">
+                <image class="search-img" src="/image/ahw.png" />
+            </view>
+        </view>
+        <!-- 轮播图 -->
+        <swiper indicator-dots="{{indicatorDots}}" circular="{{circular}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color='{{ctrlColor}}' indicator-active-color="{{ctrlCurrentColor}}">
+            <block wx:for="{{imgUrls}}" wx:key="index">
+                <swiper-item class="swiper-item">
+                    <image src="{{item.image}}" class="slide-image" width="355" height="150" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 导航 -->
+    <view class="navList">
+        <block wx:for="{{navList}}" wx:key="{{index}}">
+            <view class="nav-item">
+                <image class="nav-icon" src="{{item.image}}" />
+                <text class="nav-name">{{item.title}}</text>
+            </view>
+        </block>
+    </view>
+    <!-- 掌上秒杀 -->
+    <view class='page-margin'>
+        <view class="page-row">
+            <image class='theme_img' src="/image/bej.png" mode="aspectFill" />
+            <view class='theme_more'>
+                <text>更多秒杀</text>
+                <image src="/image/arrowright.png" mode="aspectFill" />
+            </view>
+        </view>
+        <scroll-view class='theme_scroll' scroll-x="true">
+            <block wx:for-items="{{quicks}}" wx:key="index">
+                <view style="display: inline-block;">
+                    <view class="page-column">
+                        <image src="{{item.image}}" mode="aspectFill" />
+                        <text>{{item.price}}</text>
+                    </view>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+    <!-- 会场分类 -->
+    <block wx:for='{{pageRow}}' wx:for-item="page" wx:key="index">
+        <view class='page-row' style="justify-content:center">
+            <image class='page_img' wx:for='{{page}}' wx:key="index" src="{{item}}" mode="aspectFill"></image>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,24 @@
+<!-- 白条弹框 -->
+<view class='popupDom' hidden='{{!isShowPopup}}' data-target="current" catchtap='hiedPopupView'>
+  <view class='pop_main'>
+    <view class='pop_header'>
+      打白条购买
+      <text data-target="current" catchtap='hiedPopupView'>x</text>
+    </view>
+    <view class='pop_body'>
+      <block wx:for='{{IOUList}}' wx:key="index">
+          <view class='section_item' data-currentIndex="{{index}}" bindtap='selectedCheck'>
+            <image wx:if='{{item.select}}'  src='/image/selected.png'></image>
+            <image wx:else src='/image/unselect.png'></image>
+            <view class='detail'>
+              <text class='dec'>{{item.desc}}</text>
+              <text class='tip'>{{item.tip}}</text>
+            </view>
+          </view>
+      </block>
+    </view>
+    <view class='pop_btn'>
+      <button bindtap='submitBT'>立即打白条</button>
+    </view>
+  </view>
+</view>

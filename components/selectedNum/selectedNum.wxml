@@ -1,0 +1,23 @@
+<view class='popupDom' hidden='{{!isShowSelected}}' catchtap='showSelectedPopup' data-current="current">
+  <view class='pop_main'>
+    <view class='buy_header'>
+      <view class='head_img'>
+        <image src='{{partData.loopImgUrl[0]}}'></image>
+      </view>
+      <view class='info'>
+        <text class='price'>¥{{partData.price}}</text>
+        <text class='selcount'>已选 {{partData.count}}件</text>
+      </view>
+      <text data-current="current" catchtap='showSelectedPopup'>x</text>
+    </view>
+    <view class='buy_body'>
+      <text>数量</text>
+      <view class='amount'>
+        <count bind:getSelectNum="getCartVal" count="{{partData.count}}"></count>
+      </view>
+    </view>
+    <view class='pop_btn'>
+      <button catchtap='addCart'>加入购物车</button>
+    </view>
+  </view>
+</view>

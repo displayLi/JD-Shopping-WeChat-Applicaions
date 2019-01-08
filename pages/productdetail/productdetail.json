@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "detailsCom":"/components/detailsComponent/detailsCom",
+    "iouCom":"/components/IOU/iouCom",
+    "selectedNum": "/components/selectedNum/selectedNum"
+  }
+}
