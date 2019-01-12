@@ -1,4 +1,4 @@
-# JD Shopping weixin Applicaions
+# JD Shopping WeChar Applicaions
 
 > 高效还原京东商城微信小程序
 

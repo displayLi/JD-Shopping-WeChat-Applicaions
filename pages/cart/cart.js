@@ -255,6 +255,12 @@ Page({
       key: 'cartInfo',
       data: this.data.cartList,
     })
+
+    this.setData({
+      totalMoney: '0.00',
+      totalCount: 0,
+      selectAll: false
+    })
   },
 
   /**
