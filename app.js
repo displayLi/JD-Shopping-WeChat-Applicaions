@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    defaultURL: 'http://api.link97.com:5001'
+    defaultURL: 'http://api.link97.com:8086'
   }
 })
