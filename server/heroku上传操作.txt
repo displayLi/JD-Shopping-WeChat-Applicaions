@@ -1,0 +1,40 @@
+注册mlab 创建user  获取数据库地址 
+注册heroku
+在项目中创建 .gitignore 文件  node_modules
+git init 
+git add .
+git commit -am ‘initial commit’
+安装heroku CLI 下载安装包 下一步下一步等等
+打开cmd 不要用git bash 
+heroku login  输入email用户名 和 密码
+heroku create  去heroku网站刷新 会发现有了一个app
+点击app然后找到deploy
+然后使用heroku git:remote那段
+在终端中链接
+git push heroku master 
+heroku open 就可以使用接口了
+
+
+接口说明
+
+/api/profiles/homepage  主页接口
+/api/profiles/productions  商品分类接口
+/api/profiles/productionsList 商品列表
+/api/profiles/productionDetail 商品详情
+
+
+mlab测试账号
+
+账户名1: test_mr_wu 
+密　码: test1234
+账户名2: misterwu1
+密　码: test1234
+账户名3: misterwu2
+密　码: test1234
+账户名4: misterwu3
+密　码: test1234
+账户名5: misterwu4
+密　码: test1234
+Heroku
+账户名: hemiahwu@gmail.com
+密　码: _test12345
