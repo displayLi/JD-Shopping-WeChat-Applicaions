@@ -10,7 +10,7 @@
   "author": "米斯特吴",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^2.0.1",
+    "bcrypt": "^5.0.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "gravatar": "^1.6.0",
